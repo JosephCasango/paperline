@@ -1,0 +1,2098 @@
+/* Menu */
+
+
+.Manglar1{
+  color: #00dfb0;
+    cursor: pointer;
+}
+
+
+
+
+* {box-sizing: border-box}
+
+
+/* Style tab links */
+.tablink .ButtonPro{
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink .ButtonPro:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+#InicioPag {
+  background-color: white;
+  height: 100%;
+}
+#ProductoPag{
+background: radial-gradient(circle at 100% 107%, #ff89cc 0%, #9cb8ec 30%, #00ffee 60%, #62c2fe 100%);
+  height: 530%;
+
+}
+#TramitePag {
+  background-color: white;
+  height: 70%;
+}
+
+#CarritoPag {
+ background-image: linear-gradient(to right, rgb(255, 174, 0), rgb(204, 0, 255));
+    height: 900%;
+}
+
+
+
+body, html {
+
+  margin: 0;
+  font-family: Arial;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Barra */
+/* Menu Barra */
+.Menu{
+
+    position: absolute;
+top: 20px; left: 1200px;
+}
+
+
+.Icono{
+  border-radius: 90%;
+    border: 8px #212529 solid;
+
+
+      position: absolute;
+top: 15px; left: 15px;
+
+  }
+
+
+.Punto{
+    color: #212529;
+  }
+
+
+.PapeSub{
+
+      position: absolute;
+top: 32px; left: 23px;
+
+  }
+
+
+.P{
+
+      position: absolute;
+top: 30px; left: 140px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+/* Button Menu */
+.MenuB {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #2FA58C;
+  color: #f5f5f5;
+    cursor: pointer;
+}
+
+.MenuB:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.MenuB .iconMenu {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.MenuB .textM {
+  transform: translateX(55px);
+}
+
+.MenuB:hover .iconMenu {
+  width: 175px;
+}
+
+.MenuB:hover .textM {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.MenuB:focus {
+  outline: none;
+}
+
+.MenuB:active .iconMenu {
+  transform: scale(0.85);
+}
+
+
+
+
+
+
+
+/* Botones dentro del menu */
+
+/* Boton Inicio */
+.BuIni{
+
+      position: absolute;
+top: 150px; left: 65px;
+
+  }
+
+
+
+
+.ButtonIni {
+  width: 140px;
+  height: 56px;
+  overflow: hidden;
+  border: none;
+  color: hotpink;
+  background: none;
+  position: relative;
+  padding-bottom: 2em;
+      cursor: pointer;
+}
+
+.ButtonIni > div,.ButtonIni > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.ButtonIni:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+.ButtonIni:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.ButtonIni .cloneIni > *,.ButtonIni .textIni > * {
+  opacity: 1;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  margin-left: 4px;
+}
+
+.ButtonIni .cloneIni > * {
+  transform: translateY(60px);
+}
+
+.ButtonIni:hover .cloneIni > * {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.ButtonIni:hover .textIni > * {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.ButtonIni:hover .cloneIni > :nth-child(1) {
+  transition-delay: 0.15s;
+}
+
+.ButtonIni:hover .cloneIni > :nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.ButtonIni:hover .cloneIni > :nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+.ButtonIni:hover .cloneIni > :nth-child(4) {
+  transition-delay: 0.3s;
+}
+/* icon style and hover */
+.ButtonIni svg {
+  width: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transition: 0.2s ease-out;
+}
+
+.ButtonIni:hover svg {
+  transform: translateY(-50%) rotate(-50deg);
+}
+
+
+
+
+
+
+
+/* Boton Producto */
+  .BuPro{
+
+      position: absolute;
+top: 250px; left: 65px;
+
+  }
+
+
+.ButtonPro {
+  width: 170px;
+  height: 56px;
+  overflow: hidden;
+  border: none;
+  color: yellow;
+  background: none;
+  position: relative;
+  padding-bottom: 2em;
+      cursor: pointer;
+}
+
+.ButtonPro > div,.ButtonPro > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.ButtonPro:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+.ButtonPro:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.ButtonPro .clonePro > *,.ButtonPro .textPro > * {
+  opacity: 1;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  margin-left: 4px;
+}
+
+.ButtonPro .clonePro > * {
+  transform: translateY(60px);
+}
+
+.ButtonPro:hover .clonePro > * {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.ButtonPro:hover .textPro > * {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.ButtonPro:hover .clonePro > :nth-child(1) {
+  transition-delay: 0.15s;
+}
+
+.ButtonPro:hover .clonePro > :nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.ButtonPro:hover .clonePro > :nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+.ButtonPro:hover .clonePro > :nth-child(4) {
+  transition-delay: 0.3s;
+}
+/* icon style and hover */
+.ButtonPro svg {
+  width: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transition: 0.2s ease-out;
+}
+
+.ButtonPro:hover svg {
+  transform: translateY(-50%) rotate(-50deg);
+}
+
+
+
+
+
+
+
+
+
+
+/* Boton Tramites */
+
+  .BuTra{
+
+      position: absolute;
+top: 350px; left: 65px;
+
+  }
+
+
+
+  .ButtonTra {
+  width: 170px;
+  height: 56px;
+  overflow: hidden;
+  border: none;
+  color: orange;
+  background: none;
+  position: relative;
+  padding-bottom: 2em;
+      cursor: pointer;
+}
+
+.ButtonTra > div,.ButtonTra > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.ButtonTra:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+.ButtonTra:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.ButtonTra .cloneTra > *,.ButtonTra .textTra > * {
+  opacity: 1;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  margin-left: 4px;
+}
+
+.ButtonTra .cloneTra > * {
+  transform: translateY(60px);
+}
+
+.ButtonTra:hover .cloneTra > * {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.ButtonTra:hover .textTra > * {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.ButtonTra:hover .cloneTra > :nth-child(1) {
+  transition-delay: 0.15s;
+}
+
+.ButtonTra:hover .cloneTra > :nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.ButtonTra:hover .cloneTra > :nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+.ButtonTra:hover .cloneTra > :nth-child(4) {
+  transition-delay: 0.3s;
+}
+/* icon style and hover */
+.ButtonTra svg {
+  width: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transition: 0.2s ease-out;
+}
+
+.ButtonTra:hover svg {
+  transform: translateY(-50%) rotate(-50deg);
+}
+
+
+
+
+
+
+
+
+
+
+/* Boton Carrito */
+
+
+  .BuCar{
+
+      position: absolute;
+top: 450px; left: 65px;
+
+  }
+
+
+  .ButtonCar {
+  width: 170px;
+  height: 56px;
+  overflow: hidden;
+  border: none;
+  color: limegreen;
+  background: none;
+  position: relative;
+  padding-bottom: 2em;
+      cursor: pointer;
+}
+
+.ButtonCar > div,.ButtonCar > svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.ButtonCar:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+.ButtonCar:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.ButtonCar .cloneCar > *,.ButtonCar .textCar > * {
+  opacity: 1;
+  font-size: 1.3rem;
+  transition: 0.2s;
+  margin-left: 4px;
+}
+
+.ButtonCar .cloneCar > * {
+  transform: translateY(60px);
+}
+
+.ButtonCar:hover .cloneCar > * {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.ButtonCar:hover .textCar > * {
+  opacity: 1;
+  transform: translateY(-60px);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.ButtonCar:hover .cloneCar > :nth-child(1) {
+  transition-delay: 0.15s;
+}
+
+.ButtonCar:hover .cloneCar > :nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.ButtonCar:hover .cloneCar > :nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+.ButtonCar:hover .cloneCar > :nth-child(4) {
+  transition-delay: 0.3s;
+}
+/* icon style and hover */
+.ButtonCar svg {
+  width: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transition: 0.2s ease-out;
+}
+
+.ButtonCar:hover svg {
+  transform: translateY(-50%) rotate(-50deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Pagina de inicio fondo principal */
+.container {
+  position: relative;
+  font-family: Arial;
+
+}
+
+.text-block {
+
+      position: absolute;
+  bottom: 20px;
+  right: 150px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+    border-radius: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pagina de inicio abajo del fondo */
+.Recep {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+
+}
+
+.Recep {
+  box-sizing: border-box;
+
+}
+
+
+
+.column21 {
+  float: left;
+  width: 22.3%;
+  margin-bottom: 46px;
+  padding: -40 -50px;
+
+}
+
+.card21 {
+  box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section21 {
+  padding: 8px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+}
+
+.container21 {
+  padding: 10 16px;
+
+
+}
+
+.container21::after, .row21::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+
+@media screen and (max-width: 700px) {
+  .column21 {
+    width: 500%;
+    display: block;
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.IMG{
+  border-radius: 1%;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pagina de inicio Google Maps */
+.Recep {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+
+}
+
+.Recep {
+  box-sizing: border-box;
+}
+
+
+
+.column210 {
+  float: left;
+  width: 97%;
+  margin-bottom: 16px;
+  padding: 0 0px;
+
+}
+
+.card210 {
+  box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section210 {
+  padding: 50px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+}
+
+.container210 {
+  padding: 0 16px;
+}
+
+.container210::after, .row210::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 950px) {
+  .column210 {
+    width: 100%;
+    display: block;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Producto Lapiz 1 Ticonderoga*/
+
+.Lapiz1 {
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 1rem;
+  max-width: 300px;
+  background-color: #fff;
+  color: #212121;
+
+      float: left;
+
+margin: .3em;
+  margin-left: 1em;
+
+
+}
+
+
+
+
+
+
+
+
+.image1 {
+  height: 15rem;
+
+  
+  width: 100%;
+  object-fit: cover;
+  background-color: rgb(204, 0, 255);
+  background-image: linear-gradient(to right, rgb(255, 174, 0), rgb(204, 0, 255));
+}
+
+.content1 {
+  padding: .5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.text-1 {
+  font-size: .875rem;
+  line-height: 0.25rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.text-2 {
+  margin-top: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.text-2 span:first-child {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+}
+
+.text-2 span:last-child {
+  margin-top: 0.5rem;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action1 {
+  margin-top: 1rem;
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 110px;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 200;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: rgba(275, 255, 255, 1);
+  text-decoration: none;
+}
+
+.date1 {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(156, 163, 175, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Carrito Cescripcion*/
+.cardDes {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  max-width: 9000px;
+  background-color: white;
+  color: black;
+    padding: 1rem;
+}
+
+/* Producto Lapiz 1 Ticonderoga Carrito*/
+.card001 {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  max-width: 9000px;
+  background-color: white;
+  color: black;
+    padding: 0rem;
+
+}
+
+
+  
+  
+
+
+
+
+
+
+  /* Buscador de la pagina productos*/
+
+  .input[type=text] {
+
+  background-color: #fff;
+  color: #242424;
+  padding: .20rem 5.5rem;
+
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 10px 20px -18px blue;
+  border-bottom: 3px solid #0d14e9;
+
+}
+
+
+
+
+  /*  Input Lapiz 7 pesos*/
+
+.input1 {
+  cursor: pointer;
+}
+
+.input1 input {
+  display: none;
+}
+
+.input1 svg {
+  overflow: visible;
+}
+
+.path {
+  fill: none;
+  stroke: hotpink;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dasharray 0.5s ease, stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 241 9999999;
+  stroke-dashoffset: 0;
+}
+
+.input1 input:checked ~ svg .path {
+  stroke-dasharray: 70.5096664428711 9999999;
+  stroke-dashoffset: -262.2723388671875;
+}
+
+
+
+
+
+  /*  Borrar1*/
+
+  .Borrar1 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Borrar1:hover {
+  transition-duration: .3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tramites*/
+
+
+.cardTra {
+  overflow: hidden;
+  border-radius: 0.5rem;
+      border: 5px black solid;
+  max-width: 9000px;
+  background-color: limegreen;
+  color: limegreen;
+    padding: 2rem;
+}
+
+
+.TexC {
+
+  color: white;
+
+}
+
+
+
+
+
+
+.cardTra2 {
+  overflow: hidden;
+  border-radius: 0.5rem;
+      border: 5px black solid;
+  max-width: 9000px;
+  background-color: orangered;
+  color: orangered;
+    padding: 2rem;
+}
+
+
+.TexR2 {
+
+  color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pagina tramites */
+.Tra {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+
+
+/* Menu */
+
+
+
+
+
+
+/* Pagina tramites */
+#Curp {background-color: green;
+    height: 250%;
+      font-family: Arial;
+        border-radius: 2%;
+
+}
+
+#Rfc {background-color: #16C0CD;
+    height: 250%;
+      font-family: Arial;
+        border-radius: 2%;
+}
+
+
+#Acta {background-color: #C83636;
+    height: 200%;
+      font-family: Arial;
+        border-radius: 2%;
+}
+
+
+
+/* Mbutton Curp */
+.ir1 {
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: white;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+  cursor: pointer;
+}
+
+.ir1::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: green;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+.ir1:hover {
+ color: #e8e8e8;
+}
+
+.ir1:hover::before {
+ width: 100%;
+}
+
+
+
+
+/* button rfc*/
+.ir2 {
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: white;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+  cursor: pointer;
+}
+
+.ir2::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: blue;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+.ir2:hover {
+ color: #e8e8e8;
+}
+
+.ir2:hover::before {
+ width: 100%;
+}
+
+
+
+
+/* Button acta de nacimiento */
+.ir3 {
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: white;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+  cursor: pointer;
+}
+
+.ir3::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: darkred;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+.ir3:hover {
+ color: #e8e8e8;
+}
+
+.ir3:hover::before {
+ width: 100%;
+}
+
+
+
+
+
+
+/* Tramites pagina CURP*/
+
+
+.CNombre {
+  --input-focus: #2d8cf0;
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
+}
+
+.CNombre::placeholder {
+  color: var(--font-color-sub);
+  opacity: 0.8;
+}
+
+.CNombre:focus {
+  border: 2px solid var(--input-focus);
+}
+
+
+
+
+
+
+.Gobierno{
+  border-radius: 10%;
+
+
+
+      position: absolute;
+top: 250px; left: 1170px;
+
+  }
+
+
+
+
+
+
+
+
+/* Pagar Tramites Curp*/
+
+.PagarCurp {
+ padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+   cursor: pointer;
+}
+
+.PagarCurp::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 0;
+ border-radius: 15px;
+ background-color: #212121;
+ z-index: -1;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms
+}
+
+.PagarCurp:hover {
+ color: #e8e8e8;
+}
+
+.PagarCurp:hover::before {
+ width: 100%;
+}
+
+
+
+
+/* Tabla de la pagina producto inferior*/
+.cardDesP {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  max-width: 500px;
+  background-color: hotpink;
+
+    padding: 1rem;
+}
+
+/* Lo borre por accidente*/
+
+.cardDesP2 {
+  overflow: hidden;
+  border-radius: 0.5rem;
+    border: 2px hotpink solid;
+
+  max-width: 9000px;
+  background-color: white;
+  color: black;
+    padding: 1rem;
+}
+
+
+
+/* PagInicio Califica la pagina*/
+
+.calif {
+
+  padding: 1rem;
+  background-color: #fff;
+  max-width: 1020px;
+  border-radius: 20px;
+  box-shadow: 10px 10px #323232;
+  border: 3px solid #323232;
+     
+}
+
+
+
+
+.rating:not(:checked) > input {
+
+  position: absolute;
+  appearance: none;
+
+
+}
+
+.rating:not(:checked) > label {
+
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  color: #666;
+
+}
+
+.rating:not(:checked) > label:before {
+
+  content: '★';
+
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+
+
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+
+}
+
+
+
+
+
+
+
+
+.social-links,.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: white;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-btn:hover {
+  width: 300px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 260px;
+}
+
+#Facebook svg {
+  fill: #3b5999;
+}
+
+#Gmail svg {
+  fill: #dd4b39;
+}
+
+#Wassap {
+  fill: #00ff00;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Pagina productos  */
+
+
+.Prod {
+  /* color used to softly clip top and bottom of the .words container */
+--bg-color:white;
+  background-color: var(--bg-color);
+  padding: -20rem -5rem;
+  border-radius: 1.25rem;
+}
+.loader {
+  color: rgb(124, 124, 124);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 50px;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+}
+
+.words {
+  overflow: hidden;
+  position: relative;
+}
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 8;
+  background: linear-gradient(
+    var(--bg-color) 5%,
+    transparent 20%,
+    transparent 70%,
+    var(--bg-color) 90%
+  );
+  z-index: 100;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  padding-left: 8px;
+
+  animation: spin_4991 10s infinite;
+}
+
+@keyframes spin_4991 {
+  15% {
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+
+  25% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  35% {
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+
+  75% {
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+
+  85% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+
+
+
+  100% {
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+}
+
+
+
+
+  /* Pagina carrito Input cantidad  */
+
+  .inputCan {
+  max-width: 190px;
+  height: 44px;
+  background-color: #05060f0a;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+
+  /* Pagina carrito bUTTON Pagar  */
+
+  .cartBtn {
+
+  width: 155px;
+  height: 50px;
+  border: none;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  background-color: rgb(29, 29, 29);
+  box-shadow: 0 20px 30px -7px rgba(27, 27, 27, 0.219);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cart {
+  z-index: 2;
+}
+
+.cartBtn:active {
+  transform: scale(0.96);
+}
+
+.product {
+  position: absolute;
+  width: 12px;
+  border-radius: 3px;
+  content: "";
+  left: 50px;
+  bottom: 23px;
+  opacity: 0;
+  z-index: 1;
+  fill: rgb(211, 211, 211);
+}
+
+.cartBtn:hover .product {
+  animation: slide-in-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0) rotate(-90deg);
+    opacity: 1;
+  }
+}
+
+.cartBtn:hover .cart {
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+  /* Pagina carrito INPUT pagar   */
+
+  .input-container {
+  position: relative;
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  color: #333;
+  width: 300px;
+  outline: none;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 10%, #FFCC70 100%);
+  transition: width 0.3s;
+}
+
+.input[type="text"]:focus + .underline {
+  width: 47%;
+}
+
+@keyframes floating-label {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+}
+
+.input[type="text"]:placeholder-shown + label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #777;
+  pointer-events: none;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.input[type="text"]:focus:not(:placeholder-shown) + label {
+  transform: translateY(-25px);
+  font-size: 12px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  animation: floating-label 0.3s forwards;
+}
+
+
+
+
+
+
+
+  /* Pagina carrito INPUT Number   */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  color: #333;
+  width: 300px;
+  outline: none;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 10%, #FFCC70 100%);
+  transition: width 0.3s;
+}
+
+.input[type="number"]:focus + .underline {
+  width: 47%;
+}
+
+@keyframes floating-label {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+}
+
+.input[type="number"]:placeholder-shown + label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #777;
+  pointer-events: none;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.input[type="number"]:focus:not(:placeholder-shown) + label {
+  transform: translateY(-25px);
+  font-size: 12px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  animation: floating-label 0.3s forwards;
+}
+
+
+
+
+
+
+  /* Pagina carrito INPUT tel   */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input[type="tel"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  color: #333;
+  width: 300px;
+  outline: none;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 10%, #FFCC70 100%);
+  transition: width 0.3s;
+}
+
+.input[type="tel"]:focus + .underline {
+  width: 47%;
+}
+
+@keyframes floating-label {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+}
+
+.input[type="tel"]:placeholder-shown + label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #777;
+  pointer-events: none;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.input[type="tel"]:focus:not(:placeholder-shown) + label {
+  transform: translateY(-25px);
+  font-size: 12px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  animation: floating-label 0.3s forwards;
+}
+
+
+
+
+  /* Pagina carrito INPUT email   */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  color: #333;
+  width: 300px;
+  outline: none;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 10%, #FFCC70 100%);
+  transition: width 0.3s;
+}
+
+.input[type="email"]:focus + .underline {
+  width: 47%;
+}
+
+@keyframes floating-label {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+}
+
+.input[type="email"]:placeholder-shown + label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #777;
+  pointer-events: none;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.input[type="email"]:focus:not(:placeholder-shown) + label {
+  transform: translateY(-25px);
+  font-size: 12px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  animation: floating-label 0.3s forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Pagina inicio comentario  */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+.input2[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  color: #333;
+  width: 800px;
+  outline: none;
+}
+
+.underline2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #4158D0;
+  background-image: linear-gradient(63deg, #4158D0 0%, #C850C0 50%, #FFCC70 100%);
+  transition: width 0.3s;
+}
+
+.input2[type="text"]:focus + .underline2 {
+  width: 97%;
+}
+
+@keyframes floating-label {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+}
+
+.input2[type="text"]:placeholder-shown + label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #777;
+  pointer-events: none;
+  transition: transform 0.3s, font-size 0.3s, color 0.3s;
+}
+
+.input2[type="text"]:focus:not(:placeholder-shown) + label {
+  transform: translateY(-25px);
+  font-size: 12px;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  animation: floating-label 0.3s forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+.comen {
+
+  width: 1500px;
+  height: 300px;
+
+  padding: 1rem;
+  background: white;
+  max-width: 1340px;
+  border-radius: 10px;
+  box-shadow: 10px 10px #323232;
+  border: 3px solid #323232;
+}
